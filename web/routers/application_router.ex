@@ -1,5 +1,6 @@
 defmodule ApplicationRouter do
   use Dynamo.Router
+  filter Sample.LoggingFilter
 
   prepare do
     # Pick which parts of the request you want to fetch
